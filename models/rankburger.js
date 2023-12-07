@@ -16,6 +16,10 @@ const rankburgerSchema = new mongoose.Schema({
     type: Number,
     required: true,
   },
+  price: {
+    type: String,
+    required: true
+  }
 });
 
 module.exports = mongoose.model('rankBurger', rankburgerSchema)
